@@ -1,0 +1,78 @@
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+
+.cover {
+    height:400px;
+    background-image: url("./fondo2.jpg");
+    color: lightgray;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.stripe-container, .slider-container{
+    display: flex;
+    
+}
+
+.stripe-container .card{
+    width: 300px;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+.product-stripe, .slider{
+    overflow-x: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.image-container{
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+.slider{
+    overflow-x: hidden;
+}
+.slider-container{
+    transform: translateX(0);
+    animation: slider 10s infinite;
+}
+
+@keyframes slider{
+    0%{
+        transform: translate(0);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
